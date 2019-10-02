@@ -22,7 +22,7 @@
 	<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>  
 
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato" rel="stylesheet">
+	<link rel=preload href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato">
 
 	<style amp-custom="">
 		@font-face {
@@ -178,7 +178,7 @@
 		}
 
 		body {
-			margin: 0
+			margin: 0;
 		}
 
 		article,
@@ -426,7 +426,13 @@
 		}
 
 		body {
-			background: #1d1d1d;
+			background: url(./img/fundo.png) no-repeat center top fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
 			color: #fff;
 			min-width: 315px;
 			overflow-x: hidden;
@@ -1307,6 +1313,8 @@
     }
 
     /*END WHATS*/
+
+
 	</style>
 </head>
 <body>
